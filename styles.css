@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    border: 2px solid black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(23, 21, 21);
+    perspective: 3rem;
+    transform: translateZ(40rem);
+}
+.container{
+    border: 2px solid rgb(176, 20, 20,0.3);
+    margin: 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: rgb(8, 14, 12);
+}
+.container:hover{
+    box-shadow: 1rem 1rem 3rem rgba(254, 252, 252, 0.3);
+}
+h1{
+    font-size: 4rem;
+    color: white;
+}
+h1:hover{
+    text-shadow: 0.2rem 0.2rem 1rem rgba(21, 17, 17, 0.6);
+    font-size: 4rem;
+    color: white;
+}
+.gallaryImage{
+    /* border: 1px solid black; */
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+img{
+    max-width: 23rem;
+    height: 100%;
+    width: 100%;
+
+}
+.card{
+    /* border: 2px solid gray; */
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    filter: grayscale(100%);
+    
+}
+.card:hover{
+    border: 2px solid gray;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0.5rem 0.5rem 4rem rgba(255, 236, 236, 0.4);
+    transform: scale(1.1);
+    filter: grayscale(0%);
+   transition: filter 2s;
+   transition: transform 1s;;
+
+}
+figcaption{
+    position: relative;
+    bottom: 2rem;
+    left: 1rem;
+    color: rgb(235, 15, 15,0);
+    height: 0rem;
+}
+figcaption:hover,img:hover{
+    color: rgb(251, 7, 7);
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
